@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    
+
+    <title>Лента публикаций</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="../img4/BlogLogo.png" alt="logo">
+
+            <nav class="flex-center">
+                <img class="flex-center" src="../img4/i-user.svg" alt="image_user">
+
+                <div class="links">
+
+                    <a class="link white_border_link" href="#">Войти</a>
+                    <a class="link white_border_link" href="#">Зарегистрироваться</a>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="mainbody">
+            <h1 class="title">Последние публикации</h1>
+
+            <div class="content">
+
+                <div class="contents">
+
+                    <div class="posts">
+
+                        <div class="post" data-categories="Git, Console">
+                            <img class="photo_post" src="../img4/post-1.png" alt="photo_post">
+
+                            <h2 class="title_post">Работа с Git в Visual Studio Code</h2>
+
+                            <label class="content_post">Один из способов работать с Гитом.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Git</label>
+                                <label class="post_category">Консоль</label>
+                            </div>
+                        </div>
+
+                        <div class="post" data-categories="Figma">
+                            <img class="photo_post" src="../img4/post-2.png" alt="photo_post">
+
+                            <h2 class="title_post">Adobe покупают Фигму. Всё пропало?</h2>
+
+                            <label class="content_post">Не факт, но есть разные мнения.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Figma</label>
+                            </div>
+                        </div>
+
+                        <div class="post" data-categories="Education, Career">
+                            <img class="photo_post" src="../img4/post-3.png" alt="photo_post">
+
+                            <h2 class="title_post">Все научились программировать. А дальше-то что?</h2>
+
+                            <label class="content_post">Ученье — свет.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Обучение</label>
+                                <label class="post_category">Карьера</label>
+                            </div>
+                        </div>
+
+                        <div class="post" data-categories="Education">
+                            <img class="photo_post" src="../img4/post-4.png" alt="photo_post">
+
+                            <h2 class="title__title">Мне тяжело учиться, кто поможет?</h2>
+
+                            <label class="content_post">Попали в патовую ситуацию? Тогда кликайте на статью.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Обучение</label>
+                            </div>
+                        </div>
+
+                        <div class="post" data-categories="Education, Career">
+                            <img class="photo_post" src="../img4/post-5.png" alt="photo_post">
+
+                            <h2 class="title_post">Ключевые навыки фронтендеров в 2022</h2>
+
+                            <label class="_content_post">Ежегодное исследование рынка от HTML Academy.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Обучение</label>
+                                <label class="post_category">Карьера</label>
+                            </div>
+                        </div>
+
+                        <div class="post" data-categories="News">
+                            <img class="photo_post" src="../img4/post-6.png" alt="photo_post">
+
+                            <h2 class="title_post">Фронтенд-новости</h2>
+
+                            <label class="content_post">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</label>
+
+                            <div class="post_categories">
+                                <label class="post_category">Новости</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="load_more">Загрузить ещё 6</button>
+                </div>
+
+                <div class="list_nav">
+                    <h3 class="list_nav_title">Рубрики</h3>
+
+                    <button class="categories_button blue_border_link" data-categories="Education">Обучение</button>
+                    <button class="categories_button blue_border_link" data-categories="Career">Career</button>
+                    <button class="categories_button blue_border_link" data-categories="Figma">Figma</button>
+                    <button class="categories_button blue_border_link" data-categories="Console">Консоль</button>
+                    <button class="categories_button blue_border_link" data-categories="Git">Git</button>
+                    <button class="categories_button blue_border_link" data-categories="News">Новости</button>
+
+                </div>
+
+            </div>
+    </div>
+
+    <footer>
+        <div class="mainbody">
+            <div class="footer">
+                <div class="flex-center">
+                    <a href="https://github.com/Korobovalexandra" class="menu_link blue_border_link">Об авторе</a>
+                    <a href="#" class="menu_link blue_border_link">Технологии</a>
+                </div>
+
+                <p class="blogyear">© Blog, 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
