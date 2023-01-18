@@ -1,0 +1,98 @@
+/* Form Input [type=file] */
+.input-file-row {
+	display: inline-block;
+}
+.input-file-row {
+	box-sizing: border-box;
+    position: relative;
+    width: 457px;
+    height: 340px;
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+    background: #E5E5E5;
+}
+img{
+    position: absolute;
+    left: 4.17%;
+    right: 6.5%;
+    top: 35.62%;
+    bottom: 4.17%;
+}
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 10px;
+
+    position: absolute;
+    width: 242px;
+    height: 60px;
+    left: 20px;
+    top: 20px;
+
+    border: 1px solid #624C90;
+    border-radius: 7px;    
+    overflow:hidden;
+}
+.text{
+    position: relative;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    overflow:hidden;
+    color: #624C90;
+    margin-top: 0px;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+ 
+/* Hover/active */
+.input-file:hover span {
+	border: 2px solid #4E3386;
+}
+.progress{
+    position: absolute;
+    background: #3CA255;
+    height: 3px;
+    width: 237px;
+    left: 23px;
+    top: 91px;
+} 
+/* Список c превью */
+.input-file-list {
+	padding: 10px 0;
+}
+.input-file-list-item {
+	display: inline-block;
+	margin: 0 15px 15px;
+	width: 150px;
+	vertical-align: top;
+	position: relative;
+}
+.input-file-list-item img {
+	position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 259px;
+    top: 5px;
+    border-radius: 7px;
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <!-- url на сервер -->
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+    <form id="form" method="post" enctype="multipart/form-data">
+      <div class="input-file-row">
+        <label class="input-file">
+             <input type="file" name="file[]" multiple accept="image/*">	
+             <span id="input-file"><img id="image" src="vector.png"><p class="text" id="myspan"> 	Прикрепить файл</p></span>
+         </label>
+        <div class="input-file-list"></div>
+        <p><progress class="progress" max="100" value="0" id="progress"></progress></p>
+      </div>
+    </form>
+	</body>
+</html>
