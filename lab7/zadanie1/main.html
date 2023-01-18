@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+
+
+    <title>Лента публикаций</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="img4/BlogLogo.png" alt="logo">
+
+            <nav class="flex-center">
+                <img class="flex-center" src="img4/i-user.svg" alt="image_user">
+
+                <div class="links">
+
+                    <a id="enter" class="link white_border_link" href="#">Войти</a>
+                    <a class="link white_border_link" href="#">Зарегистрироваться</a>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="enter">
+        <form class="forma" method="POST">
+            <div class="title">
+                <h3 class="title_vhod">Вход</h3>
+                <img class="close" src="img4/krest.svg">
+            </div>
+
+            <div class="login_and_password">
+                <label class="login">Логин</label>
+                <input class="input" type="text">
+            </div>
+
+            <div class="login_and_password">
+                <label class="password">Пароль</label>
+                <input class="input" type="password">
+            </div>
+
+            <div class="button_enter">
+                <a id="butt_enter" class="button" type="submit">Войти</button>
+                <a class="link">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+
+	<h1 class="title">Последние публикации</h1>
+
+                		<div id="app-9">
+				  <div class="mainbody">
+
+            		<div class="content">
+
+                		<div class="contents">
+                        <div class="posts">
+                        <div v-for = "value in datas">
+                            <div class="post">
+                                <img class="photo_post" v-bind:src="value.image" alt="photo_post">
+                                <h2 class="title_post">{{value.title}}</h2>
+                                <label class="content_post">{{value.intro}}</label>
+                                <div class="post_categories">
+                                     <div v-for = "item in value.labels"><label class="post_category">{{item}}</label></div>
+                                </div>
+                            </div>
+						</div>
+                        </div>    
+                        <button class="load_more">Загрузить ещё 6</button>
+                    </div>
+
+
+              <div id="sidebar"> 
+			<div class="mainbody">
+
+            		<div class="content">
+
+                		<div class="contents"> 
+			<div class="toggle-btn" onclick="toggleSidebar(this)">
+			    <span></span>
+			    <span></span>
+			    <span></span></div>
+		     <div class="list_nav">
+                    <h3 class="list_nav_title">Рубрики</h3>
+
+                    <button class="categories_button blue_border_link" data-categories="Education">Обучение</button>
+                    <button class="categories_button blue_border_link" data-categories="Career">Career</button>
+                    <button class="categories_button blue_border_link" data-categories="Figma">Figma</button>
+                    <button class="categories_button blue_border_link" data-categories="Console">Консоль</button>
+                    <button class="categories_button blue_border_link" data-categories="Git">Git</button>
+                    <button class="categories_button blue_border_link" data-categories="News">Новости</button>
+                </div>
+		    </div>
+</div>
+</div>
+</div>
+		</div>
+	</div>
+
+    <footer>
+        <div class="mainbody_2">
+            <div class="footer">
+                <div class="flex-center">
+                    <a href="https://github.com/Korobovalexandra" class="menu_link blue_border_link">Об авторе</a>
+                    <a href="#" class="menu_link blue_border_link">Технологии</a>
+                </div>
+
+                <p class="blogyear">© Blog, 2022</p>
+			</div>
+            </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="enter.js"></script>
+</body>
+
+</html>
